@@ -1,4 +1,7 @@
 from CharLvl_NMT import *
+from encoder import cnn_encoder, rnn_encoder
+from decoder import AttnDecoderRNN
+
 
 class CharLevel_autoencoder(nn.Module):
       def __init__(self, criterion, num_symbols, use_cuda):
